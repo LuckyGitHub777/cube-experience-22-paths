@@ -53,6 +53,8 @@ button:focus-visible,[tabindex]:focus-visible{outline:2px solid rgba(242,223,165
 </style>
 </head>
 <body>
+<main id="cube-experience" aria-label="Cube Experience — Twenty-Two Paths">
+<h1 class="srOnly">Cube Experience — Explore Twenty-Two Paths</h1>
 <div class="stage"><canvas id="scene" role="img" tabindex="0" aria-label="Interactive three-dimensional Cube correspondence model" aria-describedby="cubeInstructions"></canvas><div class="srOnly" id="cubeInstructions">Interactive visualization of a 22-position Cube. Use the mode controls, six-direction navigation, or the accessible Paths browser to explore.</div></div><div class="srOnly" id="liveRegion" aria-live="polite" aria-atomic="true"></div>
 <div class="vignette"></div><div class="grain"></div>
 <div class="topbar"><div class="brand">Cube Experience<small>Center Experience</small></div></div>
@@ -65,6 +67,7 @@ button:focus-visible,[tabindex]:focus-visible{outline:2px solid rgba(242,223,165
 <nav class="dock" aria-label="Experience modes"><button class="active" data-mode="experience" aria-pressed="true">Experience</button><button data-mode="paths" aria-pressed="false">22 Paths</button><button data-mode="function" aria-pressed="false">Axes</button><button data-mode="cosmos" aria-pressed="false">Cosmos</button><button data-mode="layers" aria-pressed="false">Layers</button><button data-mode="architect" aria-pressed="false">Architect</button></nav>
 <aside class="panel" id="panel" role="dialog" aria-modal="false" aria-labelledby="panelTitle" aria-describedby="boundary" aria-hidden="true" tabindex="-1"><button class="close" id="closePanel" aria-label="Close path details">×</button><div class="kicker" id="panelKicker">Path Lens</div><h2 id="panelTitle">The World</h2><div class="roman" id="panelRoman">XXI · TAV · CENTER</div><div class="miniCard"><div class="miniTarot"><div class="num" id="miniNum">XXI</div><div class="sig" id="miniSig">⊕</div><div class="nm" id="miniName">The World</div></div><div class="chain" id="chain"></div></div><div class="rows" id="rows"></div><div class="boundary" id="boundary"></div></aside>
 <div class="help" id="help" role="dialog" aria-modal="true" aria-labelledby="helpTitle" aria-hidden="true" tabindex="-1"><button class="close" id="helpClose" aria-label="Close guide">×</button><div class="kicker">Guide</div><h3 id="helpTitle">Remain at the origin.</h3><p>Drag or swipe to look around. Tap a path to explore it. Use the direction controls to orient the Cube. Recenter anytime.</p><div class="keys"><div><b>Drag / swipe</b><br/>Look around.</div><div><b>Tap a path</b><br/>Open its correspondence stack.</div><div><b>Modes</b><br/>Change the layer.</div><div><b>Recenter</b><br/>Return to origin.</div></div></div><div class="help pathBrowser" id="pathBrowser" role="dialog" aria-modal="true" aria-labelledby="pathBrowserTitle" aria-hidden="true" tabindex="-1"><button class="close" id="pathsClose" aria-label="Close paths browser">×</button><div class="kicker">Accessible Navigator</div><h3 id="pathBrowserTitle">Explore all 22 paths.</h3><p>Select any correspondence to open the same detail panel used by the Canvas experience.</p><div class="pathList" id="pathList"></div></div>
+</main>
 <script>
 (()=>{
 'use strict';
